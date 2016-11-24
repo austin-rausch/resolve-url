@@ -30,8 +30,4 @@ module.exports = function resolveUrl(/* ...urls */) {
     head.removeChild(base)
 
     return resolved
-  }
-
-  return resolveUrl
-
-};
+}
