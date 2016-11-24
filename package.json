@@ -1,5 +1,5 @@
 {
-  "name": "resolve-url",
+  "name": "resolve-url-use-module-exports",
   "version": "0.2.1",
   "author": "Simon Lydell",
   "license": "MIT",
