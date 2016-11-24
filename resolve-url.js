@@ -1,17 +1,7 @@
 // Copyright 2014 Simon Lydell
 // X11 (“MIT”) Licensed. (See LICENSE.)
 
-void (function(root, factory) {
-  if (typeof define === "function" && define.amd) {
-    define(factory)
-  } else if (typeof exports === "object") {
-    module.exports = factory()
-  } else {
-    root.resolveUrl = factory()
-  }
-}(this, function() {
-
-  function resolveUrl(/* ...urls */) {
+module.exports = function resolveUrl(/* ...urls */) {
     var numUrls = arguments.length
 
     if (numUrls === 0) {
@@ -44,4 +34,4 @@ void (function(root, factory) {
 
   return resolveUrl
 
-}));
+};
